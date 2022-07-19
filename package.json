@@ -11,13 +11,23 @@
     "last 2 versions",
     "not ie > 0",
     "not ie_mob > 0",
-    "not dead"
+    "not dead",
+    "IE 11"
   ],
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "aos": "^2.3.4",
     "body-scroll-lock": "^3.1.5",
+    "core-js": "^3.19.1",
+    "counterup2": "^2.0.2",
     "include-media": "^1.4.9",
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1"
+    "nine-immersive-header": "0.3.2",
+    "normalize.css": "^8.0.1",
+    "rellax": "^1.12.1",
+    "sass": "^1.52.3",
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -47,7 +57,6 @@
     "imagemin-webpack-plugin": "^2.4.2",
     "ip": "^1.1.5",
     "mini-css-extract-plugin": "^1.2.0",
-    "node-sass": "^5.0.0",
     "perfectionist": "^2.4.0",
     "postcss": "^8.1.0",
     "postcss-loader": "^4.0.2",
@@ -66,7 +75,7 @@
     "terser-webpack-plugin": "4.2.3",
     "webpack": "^4.46.0",
     "webpack-bundle-analyzer": "^4.1.0",
-    "webpack-cli": "^4.9.0",
+    "webpack-cli": "4.9.0",
     "webpack-dev-server": "^3.10.3",
     "webpack-fix-style-only-entries": "^0.6.0",
     "webpack-notifier": "^1.8.0"
