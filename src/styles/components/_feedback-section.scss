@@ -1,18 +1,233 @@
 .feedback-section {
-  padding: 100px 0;
   background: $blue-00;
+  background-repeat: repeat;
+  padding: 5px 0 90px;
+  
+  @include media('>=tablet') {
+    padding: 57px 0 101px;
+  }
+
+  @include media('<tablet') {
+    background-image: none !important;
+  }
+
+  .container {
+    max-width: 1078px;
+    position: relative;
+  }
+
+  &__cards-holder {
+    margin: 0 -226px 0 10px;
+    
+    @include media('>=tablet') {
+      margin: 0 -226px;
+    }
+  }
 
   &__cards {
     display: flex;
     margin: 0 -10px;
+    z-index: 3;
   }
 
   &__card {
     padding: 0 10px;
   }
+
+  &__img-broken {
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 70px;
+    }
+    
+    @include media('>=laptop') {
+      right: 0;
+      transform: translate(35%, -55%);
+    }
+  }
+
+  &__img-cross {
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+    
+    @include media('>=laptop') {
+      top: -10px;
+      transform: translateX(-100%);
+    }
+  }
+
+  &__decor {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__img-left {
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translate(-40%, 30%);
+    }
+    
+    @include media('>=laptop') {
+      transform: translate(-70%, 30%);
+    }
+
+    @include media('>=widescreen-xl') {
+      transform: translate(-136%, 30%);
+    }
+  }
+
+  &__img-triangle {
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-30%, -50%);
+    }
+  }
+
+  &__img-circle {
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+    }
+    
+    @include media('>=laptop') {
+      transform: translateX(70%);
+    }
+  }
+
+  &__img-long {
+    display: none;
+
+    @include media('>=tablet') {
+      display: block;
+      position: absolute;
+      top: 68px;
+      left: 0;
+      right: 0;
+      padding: 0 100px;
+    }
+
+    @include media('>=widescreen') {
+      padding: 0;
+    }
+  }
+}
+
+.feedback-heading {
+  color: $white;
+  text-align: center;
+  margin-bottom: 12px;
+  
+  @include media('>=tablet') {
+    margin-bottom: 43px;
+    padding: 0 80px;
+  }
+  
+  @include media('>=desktop') {
+    padding: 0 230px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.3;
+
+    @include media('>=tablet') {
+      font-size: 36px;
+      background: $blue-00;
+    }
+  }
 }
 
 .students-card {
-  padding: 20px 20px 30px 25px;
+  padding: 21px 20px 12px 19px;
   background: $white;
+  max-width: 240px;
+  border-radius: 20px;
+  
+  @include media('>=tablet') {
+    padding: 20px 25px 17px 19px;
+    max-width: 279px;
+  }
+
+  &__student-inform {
+    display: flex;
+    margin-bottom: 18px;
+    
+    @include media('>=tablet') {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  &__inform {
+    width: calc(100% - 50px);
+  } 
+
+  &__name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    display: block;
+    margin-bottom: 9px;
+  }
+
+  &__course {
+    font-size: 12px;
+    line-height: 1.2;
+    color: $gray-4f;
+    display: block;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 26px;
+    
+    @include media('>=tablet') {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 22px;
+    }
+  }
+
+
+  &__rating-value {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 6px;
+  }
+
+  [class^=icon-] {
+    color: $orange;
+  }
 }

@@ -13,7 +13,7 @@ fieldset {
 #{$form-elements} {
   @include animate(border-color);
 
-  border: 1px solid currentColor;
+  border: none;
   font-size: rem-calc(20);
   line-height: 1;
   background-color: $form-background-color;
@@ -21,8 +21,9 @@ fieldset {
   min-width: 0;
   height: $form-element-height;
   padding: $form-element-padding;
-  border-radius: 0;
+  border-radius: 6px;
   -webkit-appearance: none;
+  margin-bottom: 20px;
 
   &:focus {
     //

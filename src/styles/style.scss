@@ -7,6 +7,7 @@
 @import '~include-media/dist/include-media';
 @import '~normalize.css';
 @import 'vendors/icomoon/styles';
+@import 'slick-carousel/slick/slick';
 
 // 3. Base styles and elements
 @import 'base/base';
@@ -25,3 +26,5 @@
 @import 'components/intro-section';
 @import 'components/current-section';
 @import 'components/feedback-section';
+@import 'components/wellcome-section';
+@import 'components/helper-section';

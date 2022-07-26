@@ -15,7 +15,8 @@
   line-height: $btn-line-height;
   font-weight: $btn-font-weight;
   text-decoration: none;
-
+  border-radius: 10px;
+  
   &:hover {
     text-decoration: none;
   }
@@ -62,7 +63,6 @@
   &--black {
     border: 2px solid $black;
     padding: 16px 69px 16px 77px;
-    border-radius: 10px;
     
     @include media('>=tablet') {
       padding: 16px 50px 16px 60px;
@@ -72,7 +72,6 @@
   &--blue {
     border: 2px solid $blue-00;
     padding: 12px 68px 10px 77px;;
-    border-radius: 10px;
     
     @include media('>=tablet') {
       padding: 11px 49px 11px 58px;
@@ -83,8 +82,13 @@
     font-weight: 700;
     background-color: $orange;
     padding: 16px 64px;
-    border-radius: 10px;
-  
+    width: 100%;
+    border-radius: 5px;
+      
+    @include media('>=tablet') {
+      border-radius: 10px;
+    }
+    
     &:hover {
       background: $blue-00;
       color: $white;

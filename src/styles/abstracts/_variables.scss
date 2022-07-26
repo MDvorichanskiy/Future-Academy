@@ -28,6 +28,7 @@ $black: #000;
 $blue: #002856;
 $red: #c00;
 $gray: #9a9a9a;
+$rgba: rgba(0, 9, 60, 0.1);
 $gradient: linear-gradient(90deg, #f7941d 0%, #27aae1 100%);
 $gradient2: linear-gradient(0deg, #f7941d 0%, #27aae1 100%);
 
@@ -117,13 +118,13 @@ $form-elements: (
   'textarea'
 );
 
-$form-element-font-size: $font-size-base !default;
-$form-element-padding: 5px 15px !default;
-$form-element-height: 50px !default;
-$form-background-color: transparent !default;
+$form-element-font-size: 14px;
+$form-element-padding: 5px 20px;
+$form-element-height: 50px;
+$form-background-color: $rgba;
 
-$placeholder-color: $black !default;
-$placeholder-font-size: $form-element-font-size !default;
+$placeholder-color: $gray-4f;
+$placeholder-font-size: $form-element-font-size;
 
 $textarea-height: 150px !default;
 $textarea-padding: $form-element-padding !default;
@@ -151,7 +152,8 @@ $paragraph-margin-bottom: 0.5em;
 
 // grid
 $container-max-width: 1220px;
-$gutter: 20px;
+$gutter: 10px;
+$gutter1: 20px;
 
 // base transition function
 $transition-duration-base: 0.35s;

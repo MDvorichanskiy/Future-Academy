@@ -8,6 +8,11 @@
   padding-left: $gutter;
   padding-right: $gutter;
   width: 100%;
+  
+  @include media('>=tablet') {
+    padding-left: $gutter1;
+    padding-right: $gutter1;
+  }
 }
 
 .wrapper {

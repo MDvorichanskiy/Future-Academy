@@ -140,24 +140,24 @@
       <main class="main">
         <div class="intro-section">
           <div class="container">
-            <div class="intro-section__intro-inner">
-              <div class="intro-heading">
-                <div class="intro-heading__section-heading">
-                  <h1>Образовательная платформа ХОД Future Academy</h1>
+            <div class="intro-section__intro-holder">
+              <div class="intro-inner">
+                <div class="intro-heading">
+                  <h1 class="intro-heading__title">Образовательная платформа ХОД Future Academy</h1>
                   <p>Актуальные знания для новичков и профессионалов</p>
                 </div>
-                <div class="intro-heading__intro-background" style="background-image: url(images/Vector-point.png);">
+                <div class="intro-inner__intro-background" style="background-image: url(images/Vector-point.png);">
                 </div>
-                <div class="intro-heading__img-triangle">
+                <div class="intro-inner__img-triangle">
                   <img src="images/Vector-triangle.png" alt="image description">
                 </div>
-                <div class="intro-heading__img-cross-bg">
+                <div class="intro-inner__img-cross-bg">
                   <img src="images/Vector-cross-bg.png" alt="image description">
                 </div>
-                <div class="intro-heading__img-circle">
+                <div class="intro-inner__img-circle">
                   <img src="images/Vector-circle.png" alt="image description">
                 </div>
-                <div class="intro-heading__img-broken">
+                <div class="intro-inner__img-broken">
                   <img src="images/Vector-broken-line.png" alt="image description">
                 </div>
               </div>
@@ -184,8 +184,8 @@
         </div>
         <div class="current-section">
           <div class="container">
-            <div class="section-heading">
-              <h3 class="section-heading__title">Актуальные знания от признанных экспертов рынка
+            <div class="current-heading">
+              <h3 class="current-heading__title">Актуальные знания от признанных экспертов рынка
                 для новичков и практикующих специалистов.</h3>
             </div>
             <div class="digital-inform">
@@ -275,14 +275,20 @@
             </div>
           </div>
         </div>
-        <div class="feedback-section">
+        <div class="feedback-section" style="background-image: url(images/Vector-point.png);">
           <div class="container">
-            <div class="section-headin text-center">
-              <h1>Отзывы наших студентов</h1>
+            <div class="feedback-heading">
+              <h1 class="feedback-heading__title">Отзывы наших студентов</h1>
+            </div>
+            <div class="feedback-section__img-broken">
+              <img src="images/Vector-broken-line.png" alt="image description">
+            </div>
+            <div class="feedback-section__img-cross">
+              <img src="images/Vector-cross-bg.png" alt="image description">
             </div>
           </div>
           <div class="feedback-section__cards-holder">
-            <div class="feedback-section__cards">
+            <div class="feedback-section__cards carusel">
               <div class="feedback-section__card">
                 <div class="students-card">
                   <div class="students-card__student-inform">
@@ -295,9 +301,52 @@
                     </div>
                   </div>
                   <div class="students-card__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat!</p>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius.</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
                 </div>
               </div>
               <div class="feedback-section__card">
@@ -314,7 +363,130 @@
                   <div class="students-card__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat!</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius.</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat!</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-section__card">
+                <div class="students-card">
+                  <div class="students-card__student-inform">
+                    <div class="students-card__img">
+                      <img src="images/img1.png" alt="image description">
+                    </div>
+                    <div class="students-card__inform">
+                      <span class="students-card__name">Имя Фамилия</span>
+                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+                    </div>
+                  </div>
+                  <div class="students-card__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius.</p>
+                  </div>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
                 </div>
               </div>
               <div class="feedback-section__card">
@@ -331,7 +503,10 @@
                   <div class="students-card__text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
                 </div>
               </div>
               <div class="feedback-section__card">
@@ -346,9 +521,12 @@
                     </div>
                   </div>
                   <div class="students-card__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat!</p>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
                 </div>
               </div>
               <div class="feedback-section__card">
@@ -363,9 +541,12 @@
                     </div>
                   </div>
                   <div class="students-card__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales.</p>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
                 </div>
               </div>
               <div class="feedback-section__card">
@@ -380,43 +561,106 @@
                     </div>
                   </div>
                   <div class="students-card__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius.</p>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                  <div class="students-card__rating">
+                    <span class="icon-star"></span>
+                    <span class="students-card__rating-value">4,87 / 5</span>
+                  </div>
                 </div>
               </div>
-              <div class="feedback-section__card">
-                <div class="students-card">
-                  <div class="students-card__student-inform">
-                    <div class="students-card__img">
-                      <img src="images/img1.png" alt="image description">
-                    </div>
-                    <div class="students-card__inform">
-                      <span class="students-card__name">Имя Фамилия</span>
-                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
-                    </div>
-                  </div>
-                  <div class="students-card__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
-                  </div>
-                  <span class="icon-star">4,87 / 5</span>
+            </div>
+          </div>
+          <div class="feedback-section__decor">
+            <div class="feedback-section__img-left">
+              <img src="images/Vector-left.png" alt="image description">
+            </div>
+            <div class="feedback-section__img-triangle">
+              <img src="images/Vector-triangle.png" alt="image description">
+            </div>
+            <div class="feedback-section__img-circle">
+              <img src="images/Vector-circle.png" alt="image description">
+            </div>
+            <div class="feedback-section__img-long">
+              <img src="images/vector-long.png" alt="image description">
+            </div>
+          </div>
+        </div>
+        <div class="wellcome-section">
+          <div class="container">
+            <div class="wellcome-heading">
+              <h1 class="wellcome-heading__title">Добро пожаловать в Академию будущего ХОД</h1>
+            </div>
+            <div class="wellcome-section__columns">
+              <div class="wellcome-section__column">
+                <div class="wellcome-card">
+                  <span class="icon-mechanics"></span>
+                  <span class="wellcome-card__text">Передовой подход<br> к образовательному процессу</span>
                 </div>
               </div>
-              <div class="feedback-section__card">
-                <div class="students-card">
-                  <div class="students-card__student-inform">
-                    <div class="students-card__img">
-                      <img src="images/img1.png" alt="image description">
-                    </div>
-                    <div class="students-card__inform">
-                      <span class="students-card__name">Имя Фамилия</span>
-                      <span class="students-card__course">Студент курса «WEB-разработчик»</span>
+              <div class="wellcome-section__column">
+                <div class="wellcome-card">
+                  <span class="icon-book"></span>
+                  <span class="wellcome-card__text">Непрерывное усовершенствование<br>
+                    и пополнение базы курсов</span>
+                </div>
+              </div>
+              <div class="wellcome-section__column">
+                <div class="wellcome-card">
+                  <span class="icon-board"></span>
+                  <span class="wellcome-card__text">Только практикующие преподаватели</span>
+                </div>
+              </div>
+              <div class="wellcome-section__column">
+                <div class="wellcome-card">
+                  <span class="icon-teacher"></span>
+                  <span class="wellcome-card__text">Сопровождение на всех этапах. От начала обучения до трудоустройства</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="helper-section">
+          <div class="container">
+            <div class="helper-section__holder">
+              <div class="assistant">
+                <div class="assistant__column">
+                  <div class="assistant__column-inner">
+                    <div class="assistant__speech-bubble">
+                      <span class="assistant__title">Помочь с выбором?</span>
+                      <p>Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы и подберут подходящий вариант обучения.</p>
                     </div>
                   </div>
-                  <div class="students-card__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat nisl at augue dapibus, id tristique lorem placerat. Curabitur pellentesque est bibendum urna facilisis varius. In hac habitasse platea dictumst. In ut dui sodales, scelerisque eros non, ultrices magna.</p>
+                </div>
+                <div class="assistant__column">
+                  <div class="assistant__form">
+                    <form action="#">
+                      <div class="assistant__form-name">
+                        <input type="text" tabindex="1" name="username" placeholder="Ваше имя">
+                      </div>
+                      <div class="assistant__form-inner">
+                        <div class="assistant__form-group">
+                          <input type="tel" tabindex="2" name="userphone" placeholder="Ваш телефон">
+                        </div>
+                        <div class="assistant__form-group">
+                          <input type="email" tabindex="3" name="useremail" placeholder="Ваш e-mail">
+                        </div>
+                        <div class="assistant__form-group">
+                          <div class="assistant__form-text">
+                            <p>Нажимая на кнопку, я соглашаюсь
+                              на обработку персональных данных
+                              и с правилами пользования Платформой</p>
+                          </div>
+                        </div>
+                        <div class="assistant__form-group">
+                          <button type="submit" class="btn btn--fill">Отправить</button>
+                        </div>
+                      </div>
+                    </form>
                   </div>
-                  <span class="icon-star">4,87 / 5</span>
+                </div>
+                <div class="assistant__decor">
+                  <img src="images/Сова-02.png" alt="image description">
                 </div>
               </div>
             </div>
@@ -425,13 +669,7 @@
       </main>
       <footer class="footer">
         <div class="container">
-          <div class="section-heading">
-            <a href="#" class="btn btn--grad">Робототехника</a>
-            <a href="#" class="btn btn--grad">Web-разработка</a>
-            <a href="#" class="btn btn--black">Записаться<span class="icon-cheveron-right btn-decor"></span></a>
-            <a href="#" class="btn btn--blue">Подробнее<span class="icon-cheveron-right btn-decor"></span></a>
-            <a href="#" class="btn btn--fill ">Отправить</a>
-          </div>
+          
         </div>
       </footer>
     </div>

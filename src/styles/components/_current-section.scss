@@ -1,5 +1,9 @@
 .current-section {
-  padding: 0 0 100px;
+  padding: 42px 0 0;
+  
+  @include media('>=tablet') {
+    padding: 42px 0 56px;
+  }
 
   .container {
     @include media('<tablet') {
@@ -7,19 +11,20 @@
     }
   }
 
-  .section-heading {
-    max-width: 260px;
-    margin-bottom: 35px;
+}
 
-    @include media('>=tablet') {
-      max-width: 750px;
-    }
+.current-heading {
+  max-width: 260px;
+  margin-bottom: 35px;
 
-    &__title {
-      @include media('<tablet') {
-        font-size: 18px;
-        line-height: 1.3;
-      }
+  @include media('>=tablet') {
+    max-width: 750px;
+  }
+
+  &__title {
+    @include media('<tablet') {
+      font-size: 18px;
+      line-height: 1.3;
     }
   }
 }

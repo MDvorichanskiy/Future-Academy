@@ -1,0 +1,190 @@
+.helper-section {
+  padding: 0 0 41px;
+
+  @include media('>=tablet') {
+    padding: 50px 0;
+  }
+  
+  @include media('>=laptop') {
+    padding: 158px 0;
+  }
+  
+  .container {
+    max-width: 1130px;
+    position: relative;
+  }
+
+  &__holder {
+    @include media('>=laptop') {
+      position: absolute;
+      left: 0;
+      top: -70px;
+    }
+  }
+}
+
+.assistant {
+  @include media('>=tablet') {
+    position: relative;
+    box-shadow: 1px -2px 14px 5px rgba(0, 0 , 0, 0.5);
+    background: $white;
+    border-radius: 20px;
+    padding: 40px 15px 22px 235px;
+  }
+  
+  @include media('>=laptop') {
+    display: flex;
+    margin: 0 -25px;
+    max-width: 1180px;
+  }
+
+  &__column {
+    @include media('>=tablet') {
+      display: flex;
+      padding: 0 25px;
+      min-width: 440px;
+    }
+  }
+
+  &__column-inner {
+    padding: 0 0 0 70px;
+
+    @include media('>=tablet') {
+      padding: 0;
+    }
+  }
+  
+  &__decor {
+    width: 120px;
+    position: absolute;
+    left: -50px;
+    top: 25px;
+    
+    @include media('>=tablet') {
+      width: 280px;
+      left: -50px;
+      top: 35px;
+    } 
+
+    @include media('>=laptop') {
+      top: 21px;
+    }
+  }
+  
+  &__speech-bubble {
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid $black;
+    padding: 7px 13px 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0 0 50px;
+    min-height: 150px;
+    
+    @include media('>=tablet') {
+      padding: 16px 20px 5px;
+      font-size: 16px;
+      margin: 0 0 30px;
+    }
+
+    @include media('>=laptop') {
+      margin: 0;
+    }
+    
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 10px solid transparent;
+      border-right: 10px solid $black;
+      border-top: 10px solid $black;
+      border-bottom: 10px solid transparent;
+      border-radius: 9px 0 0;
+      left: -22px;
+      top: 91px;
+      
+      @include media('>=tablet') {
+        border-left: 17px solid transparent;
+        border-right: 17px solid $black;
+        border-top: 17px solid $black;
+        border-bottom: 17px solid transparent;
+        border-radius: 8px 0 0;
+        left: -34px;
+        top: 99px;
+      }
+    }
+  
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      border-left: 9px solid transparent;
+      border-right: 9px solid $white;
+      border-top: 9px solid $white;
+      border-bottom: 9px solid transparent;
+      border-radius: 4px 0 0;
+      left: -17px;
+      top: 93px;
+      
+      @include media('>=tablet') {
+        border-left: 15px solid transparent;
+        border-right: 15px solid $white;
+        border-top: 15px solid $white;
+        border-bottom: 15px solid transparent;
+        border-radius: 6px 0 0;
+        left: -29px;
+        top: 101px;
+      }
+    }
+  
+  }
+
+  &__title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    
+    @include media('>=tablet') {
+      font-size: 24px;
+      margin-bottom: 18px;
+      
+    }
+  }
+  
+  &__form-inner {
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+    }
+  }
+  
+  &__form-group {
+    @include media('>=tablet') {
+      width: 50%;
+      padding: 0 10px;
+    }
+  }
+  
+  &__form-text {
+    font-size: 10px;
+    line-height: 1.4;
+    color: $gray-4f;
+    padding-right: 70px;
+    margin-bottom: 9px;
+    
+    @include media('>=tablet') {
+      padding-right: 15px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+
