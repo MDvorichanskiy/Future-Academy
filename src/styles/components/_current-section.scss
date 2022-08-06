@@ -60,6 +60,7 @@
   &__holder-first {
     @include media('>=tablet') {
       margin-right: 60px;
+      min-width: 198px;
     }
     
     @include media('>=desktop') {
