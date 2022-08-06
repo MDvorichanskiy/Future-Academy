@@ -3,6 +3,142 @@
 // -----------------------------------------------------------------------------
 
 .footer {
-  padding: 280px 0;
+  padding: 20px 0;
   background: $blue-00;
+  color: $white;
+  
+  @include media('>=desktop') {
+    padding: 70px 0 50px;
+  }
+
+  &__holder {
+    @include media('>=tablet') {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    @include media('>=desktop') {
+      flex-direction: row;
+    }
+  }
+
+  &__contacts {
+    @include media('>=desktop') {
+      width: 225px;
+      margin: 70px 60px 0 0;
+    }
+  }
+
+  &__inform {
+    display: none;
+    
+    @include media('>=tablet') {
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @include media('>=desktop') {
+      width: calc(100% - 285px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+
+  &__column {
+    padding: 0 10px;
+  }
+}
+
+.contacts-inform {
+  @include media('>=tablet') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @include media('>=desktop') {
+    display: block;
+  }
+
+  &__contacts-logo {
+    display: none;
+    
+    @include media('>=tablet') {
+      display: block;
+    }
+
+    @include media('>=desktop') {
+      margin-bottom: 40px;
+    }
+  }
+  
+  &__contacts {
+    margin-bottom: 25px;
+    padding: 0;
+    list-style: none;
+
+    @include media('>=tablet') {
+      margin: 0;
+    }
+    
+    @include media('>=desktop') {
+      margin-bottom: 40px;
+    }
+
+    li {
+      margin-bottom: 8px;
+
+      @include media('>=tablet') {
+        margin-bottom: 3px;
+      }
+
+      @include media('>=desktop') {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-size: 14px;
+
+    &--tel {
+      font-size: 18px;
+    }
+
+    &--sm {
+      font-size: 12px;
+    }
+  }
+
+  &__copyright {
+    font-size: 12px;
+    text-align: left;
+  }
+}
+
+.academy-inform {
+  max-width: 270px;
+
+  &__head {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 23px;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    line-height: 1.1;
+  }
+
+  &__link {
+    color: $white;
+    margin-bottom: 14px;
+  }
 }

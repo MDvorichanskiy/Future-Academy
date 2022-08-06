@@ -124,21 +124,45 @@
   list-style: none;
   padding: 0;
   margin: 0 -10px;
-
+  
   @include media('>=tablet') {
     justify-content: center;
   }
-
+  
   @include media('>=desktop') {
     display: none;
   }
-
+  
   &__social-icon {
     padding: 0 10px;
   }
-
+  
   &__link {
     font-size: 18px;
+  }
+  
+  &--footer {
+    display: flex !important;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    
+    @include media('>=desktop') {
+      justify-content: flex-start;
+      margin-bottom: 24px;
+    }
+
+    .social__link {
+      color: $white;
+      font-size: 22px;
+      
+      @include media('>=desktop') {
+        font-size: 18px;
+      }
+
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 }
 

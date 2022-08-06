@@ -38,7 +38,7 @@
   margin-bottom: 22px;
   
   @include media('>=tablet') {
-    margin-bottom: 56px;
+    margin-bottom: 45px;
   }
 
   &__title {
@@ -50,32 +50,30 @@
 }
 
 .wellcome-card {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
   max-width: 280px;
   padding: 0 10px 19px 0;
+
+  @include media('>=tablet') {
+    font-size: 18px;
+  }
   
   @include media('>=desktop') {
     padding: 0 10px 0 0;
   }
 
-  [class^='icon-'] {
-    display: block;
+  &__icon {
     font-size: 60px;
     margin-bottom: 18px;
     
     @include media('>=tablet') {
-      margin-bottom: 20px;      
+      margin-bottom: 0;
     }
   }
 
   &__text {
     display: block;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    
-    @include media('>=tablet') {
-      font-size: 18px;
-      font-weight: 500;
-    }
   }
 }

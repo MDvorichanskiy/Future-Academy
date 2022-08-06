@@ -15,7 +15,7 @@ html {
 */
 body {
   color: $body-text-color;
-  background-color: $body-background-color;
+  background-color: $body-background-color-xs;
   font-family: $font-family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
@@ -23,6 +23,10 @@ body {
   min-width: $base-min-width;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  @include media('>=tablet') {
+    background-color: $body-background-color;
+  }
 }
 
 /*
@@ -84,22 +88,12 @@ h4,
 .h4 {
   font-size: $h4-font-size;
   line-height: 1.2;
-
-  @include media('>=tablet') {
-    font-size: rem-calc(27px);
-    line-height: 1.11;
-  }
 }
 
 h5,
 .h5 {
   font-size: $h5-font-size;
   line-height: 1.36;
-
-  @include media('>=tablet') {
-    font-size: rem-calc(24px);
-    line-height: 1.46;
-  }
 }
 
 h6,

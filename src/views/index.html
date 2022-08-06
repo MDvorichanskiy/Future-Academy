@@ -594,27 +594,32 @@
             <div class="wellcome-section__columns">
               <div class="wellcome-section__column">
                 <div class="wellcome-card">
-                  <span class="icon-mechanics"></span>
+                  <div class="wellcome-card__icon">
+                    <span class="icon-mechanics"></span>
+                  </div>
                   <span class="wellcome-card__text">Передовой подход<br> к образовательному процессу</span>
                 </div>
               </div>
               <div class="wellcome-section__column">
                 <div class="wellcome-card">
-                  <span class="icon-book"></span>
-                  <span class="wellcome-card__text">Непрерывное усовершенствование<br>
-                    и пополнение базы курсов</span>
+                  <div class="wellcome-card__icon">
+                    <span class="icon-book"></span>
+                  </div>
+                  <span class="wellcome-card__text">Непрерывное усовершенствование<br> и пополнение базы курсов</span>
                 </div>
               </div>
               <div class="wellcome-section__column">
                 <div class="wellcome-card">
-                  <span class="icon-board"></span>
+                  <div class="wellcome-card__icon">
+                    <span class="icon-board"></span>
+                  </div>
                   <span class="wellcome-card__text">Только практикующие преподаватели</span>
                 </div>
               </div>
               <div class="wellcome-section__column">
                 <div class="wellcome-card">
-                  <span class="icon-teacher"></span>
-                  <span class="wellcome-card__text">Сопровождение на всех этапах. От начала обучения до трудоустройства</span>
+                  <div class="wellcome-card__icon">
+                    <span class="icon-teacher"></span></div> <span class="wellcome-card__text">Сопровождение на всех этапах. От начала обучения до трудоустройства</span>
                 </div>
               </div>
             </div>
@@ -625,41 +630,39 @@
             <div class="helper-section__holder">
               <div class="assistant">
                 <div class="assistant__column">
-                  <div class="assistant__column-inner">
-                    <div class="assistant__speech-bubble">
-                      <span class="assistant__title">Помочь с выбором?</span>
-                      <p>Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы и подберут подходящий вариант обучения.</p>
-                    </div>
+                  <div class="assistant__speech-bubble" data-aos="zoom-in-right" data-aos-offset="500" data-aos-duration="1000" data-aos-easing="ease-in-sine">
+                    <span class="assistant__title">Помочь с выбором?</span>
+                    <p>Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы и подберут подходящий вариант обучения.</p>
                   </div>
                 </div>
                 <div class="assistant__column">
-                  <div class="assistant__form">
+                  <div class="assistant-form" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
                     <form action="#">
-                      <div class="assistant__form-name">
-                        <input type="text" tabindex="1" name="username" placeholder="Ваше имя">
+                      <div class="assistant-form__name">
+                        <input type="text" name="username" placeholder="Ваше имя">
                       </div>
-                      <div class="assistant__form-inner">
-                        <div class="assistant__form-group">
-                          <input type="tel" tabindex="2" name="userphone" placeholder="Ваш телефон">
+                      <div class="assistant-form__form-inner">
+                        <div class="assistant-form__form-group">
+                          <input type="tel" name="userphone" placeholder="Ваш телефон">
                         </div>
-                        <div class="assistant__form-group">
-                          <input type="email" tabindex="3" name="useremail" placeholder="Ваш e-mail">
+                        <div class="assistant-form__form-group">
+                          <input type="email" name="useremail" placeholder="Ваш e-mail">
                         </div>
-                        <div class="assistant__form-group">
-                          <div class="assistant__form-text">
+                        <div class="assistant-form__form-group">
+                          <div class="assistant-form__form-text">
                             <p>Нажимая на кнопку, я соглашаюсь
                               на обработку персональных данных
                               и с правилами пользования Платформой</p>
                           </div>
                         </div>
-                        <div class="assistant__form-group">
+                        <div class="assistant-form__form-group">
                           <button type="submit" class="btn btn--fill">Отправить</button>
                         </div>
                       </div>
                     </form>
                   </div>
                 </div>
-                <div class="assistant__decor">
+                <div class="assistant__decor" data-aos="fade-down-right">
                   <img src="images/Сова-02.png" alt="image description">
                 </div>
               </div>
@@ -669,7 +672,107 @@
       </main>
       <footer class="footer">
         <div class="container">
-          
+          <div class="footer__holder">
+            <div class="footer__contacts">
+              <div class="contacts-inform">
+                <div class="contacts-inform__contacts-logo"><strong class="logo"><a href="#"><img src="images/logo1.png" alt="image description" /></a></strong></div>
+                <ul class="contacts-inform__contacts">
+                  <li><a class="contacts-inform__link contacts-inform__link--tel" href="tel:08009876543">0 800 987-65-43</a></li>
+                  <li><a class="contacts-inform__link" href="#">г. Харьков, ул. Свободы, д. 50</a></li>
+                  <li><a class="contacts-inform__link" href="mailto:info@hodfutureacademy.ua">info@hodfutureacademy.ua</a></li>
+                </ul>
+                <div class="contacts-inform__social-holder">
+                  <ul class="social social--footer">
+                    <li class="social__social-icon">
+                      <a href="#" class="social__link"><span class="icon-instagram"></span></a>
+                    </li>
+                    <li class="social__social-icon">
+                      <a href="#" class="social__link"><span class="icon-facebook"></span></a>
+                    </li>
+                    <li class="social__social-icon">
+                      <a href="#" class="social__link"><span class="icon-youtube"></span></a>
+                    </li>
+                    <li class="social__social-icon">
+                      <a href="#" class="social__link"><span class="icon-telegram"></span></a>
+                    </li>
+                  </ul>
+                  <div class="contacts-inform__copyright">
+                    <p>© ХОД, <a class="contacts-inform__link contacts-inform__link--sm" href="#">Future Academy</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__inform">
+              <div class="footer__columns">
+                <div class="footer__column">
+                  <div class="academy-inform">
+                    <strong class="academy-inform__head">Детям</strong>
+                    <ul class="academy-inform__list">
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Робототехника</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Создание игр</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Шахматы</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Блогинг</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Создание игр</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__column">
+                  <div class="academy-inform">
+                    <strong class="academy-inform__head">Подросткам</strong>
+                    <ul class="academy-inform__list">
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Web-разработка</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Прикладное программирование</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Графическое моделирование</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Game Development</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Разработчик мобильных приложений</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Блогинг</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Создание игр</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__column">
+                  <div class="academy-inform">
+                    <strong class="academy-inform__head">Взрослым</strong>
+                    <ul class="academy-inform__list">
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Разработчик игр на Unity</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Разработка ПО</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">
+                      Графический Дизайн</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Тестировщик ПО</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Интернет Маркетинг</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Java-разработчик</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Python–разработчик</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">IOS-разработчик</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__column">
+                  <div class="academy-inform">
+                    <strong class="academy-inform__head">Информация</strong>
+                    <ul class="academy-inform__list">
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Об академии</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мероприятия</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Новости</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">База знаний</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Карьера</a></li>
+                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Контакты</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

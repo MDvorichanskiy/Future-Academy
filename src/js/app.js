@@ -7,6 +7,7 @@ import initCounter from './components/counter'
 import initMobileNav from './components/mobileNav'
 import initAccordion from './components/initAccordion'
 import initSlick from './components/slick'
+import initAOS from './components/aos'
 
 
 
@@ -15,5 +16,6 @@ ready(() => {
   initCounter();
   initMobileNav();
   initAccordion();
-  initSlick()
+  initSlick();
+  initAOS();
 });
