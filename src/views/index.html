@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" /> -->
 </head>
 
 <body class="body">
@@ -18,7 +19,7 @@
       <header class="header" id="header">
         <div class="container">
           <div class="header__header-inner">
-            <strong class="logo"><a href="#"><img src="images/logo.png" alt="image description" /></a></strong>
+            <strong class="logo"><a class="logo__link" href="#"><img src="images/logo.png" alt="image description" /></a></strong>
             <div class="header-drop">
               <div class="header-drop__drop-inner">
                 <nav>
@@ -151,8 +152,8 @@
                 <div class="intro-inner__img-triangle">
                   <img src="images/Vector-triangle.png" alt="image description">
                 </div>
-                <div class="intro-inner__img-cross-bg">
-                  <img src="images/Vector-cross-bg.png" alt="image description">
+                <div class="intro-inner__img-cross">
+                  <img src="images/Vector-cross.png" alt="image description">
                 </div>
                 <div class="intro-inner__img-circle">
                   <img src="images/Vector-circle.png" alt="image description">
@@ -164,8 +165,8 @@
               <div class="intro-img">
                 <div class="intro-img__holder">
                   <div class="intro-img__img-inner" style="background-image: url(images/intro-img.png);">
-                    <span class="intro-img__cross">
-                      <img src="images/Vector-cross.png">
+                    <span class="intro-img__cross-sm">
+                      <img src="images/Vector-cross-sm.png">
                     </span>
                   </div>
                   <div class="intro-img__img-bottom">
@@ -178,6 +179,31 @@
                     <img src="images/Vector-line.png" alt="image description">
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-section">
+          <div class="container">
+            <div class="video-section__video-inner">
+              <div class="video-section__video bg-video-holder" style="background-image: url(images/vr.png)">
+              </div>
+              <a class="youtube-item" data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=DGQwd1_dpuc">
+                <div class="youtube-item__img-holder">
+                  <span class="youtube-item__img icon-play"><span class="hidden">play video</span></span>
+                </div>
+              </a>
+              <div class="video-section__img-triangle">
+                <img src="images/Vector-triangle-bg.png" alt="image description">
+              </div>
+              <div class="video-section__img-left">
+                <img src="images/Vector-left.png" alt="image description">
+              </div>
+              <div class="video-section__img-cross-bg">
+                <img src="images/Vector-cross-bg.png" alt="image description">
+              </div>
+              <div class="video-section__img-vector">
+                <img src="images/Vector.png" alt="image description">
               </div>
             </div>
           </div>
@@ -284,7 +310,7 @@
               <img src="images/Vector-broken-line.png" alt="image description">
             </div>
             <div class="feedback-section__img-cross">
-              <img src="images/Vector-cross-bg.png" alt="image description">
+              <img src="images/Vector-cross.png" alt="image description">
             </div>
           </div>
           <div class="feedback-section__cards-holder">
@@ -673,13 +699,13 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__holder">
-            <div class="footer__contacts">
+            <div class="footer__academy-contacts">
               <div class="contacts-inform">
-                <div class="contacts-inform__contacts-logo"><strong class="logo"><a href="#"><img src="images/logo1.png" alt="image description" /></a></strong></div>
-                <ul class="contacts-inform__contacts">
-                  <li><a class="contacts-inform__link contacts-inform__link--tel" href="tel:08009876543">0 800 987-65-43</a></li>
-                  <li><a class="contacts-inform__link" href="#">г. Харьков, ул. Свободы, д. 50</a></li>
-                  <li><a class="contacts-inform__link" href="mailto:info@hodfutureacademy.ua">info@hodfutureacademy.ua</a></li>
+                <strong class="logo contacts-inform__log"><a class="logo__link" href="#"><img src="images/logo1.png" alt="image description" /></a></strong>
+                <ul class="contacts-inform__list">
+                  <li class="contacts-inform__contacts"><a class="contacts-inform__link contacts-inform__link--tel" href="tel:08009876543">0 800 987-65-43</a></li>
+                  <li class="contacts-inform__contacts"><a class="contacts-inform__link" href="#">г. Харьков, ул. Свободы, д. 50</a></li>
+                  <li><a class="contacts-inform__link" href="mailto:&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#100;&#102;&#117;&#116;&#117;&#114;&#101;&#097;&#099;&#097;&#100;&#101;&#109;&#121;&#046;&#117;&#097;">&#105;&#110;&#102;&#111;&#064;&#104;&#111;&#100;&#102;&#117;&#116;&#117;&#114;&#101;&#097;&#099;&#097;&#100;&#101;&#109;&#121;&#046;&#117;&#097;</a></li>
                 </ul>
                 <div class="contacts-inform__social-holder">
                   <ul class="social social--footer">
@@ -697,7 +723,7 @@
                     </li>
                   </ul>
                   <div class="contacts-inform__copyright">
-                    <p>© ХОД, <a class="contacts-inform__link contacts-inform__link--sm" href="#">Future Academy</a></p>
+                    <p>&copy; ХОД, <a class="contacts-inform__link contacts-inform__link--sm" href="#">Future Academy</a></p>
                   </div>
                 </div>
               </div>
@@ -708,17 +734,17 @@
                   <div class="academy-inform">
                     <strong class="academy-inform__head">Детям</strong>
                     <ul class="academy-inform__list">
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Робототехника</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Создание игр</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Шахматы</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Блогинг</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Создание игр</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Робототехника</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Создание игр</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Шахматы</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Блогинг</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Создание игр</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Soft skills</a></li>
                     </ul>
                   </div>
                 </div>
@@ -726,17 +752,17 @@
                   <div class="academy-inform">
                     <strong class="academy-inform__head">Подросткам</strong>
                     <ul class="academy-inform__list">
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Web-разработка</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Прикладное программирование</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Графическое моделирование</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Game Development</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Разработчик мобильных приложений</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Блогинг</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Создание игр</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Web-разработка</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Прикладное программирование</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Графическое моделирование</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Game Development</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Soft skills</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Разработчик мобильных приложений</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Блогинг</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Создание игр</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Мультимедиа</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Soft skills</a></li>
                     </ul>
                   </div>
                 </div>
@@ -744,16 +770,16 @@
                   <div class="academy-inform">
                     <strong class="academy-inform__head">Взрослым</strong>
                     <ul class="academy-inform__list">
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Разработчик игр на Unity</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Разработка ПО</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Разработчик игр на Unity</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Разработка ПО</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">
                       Графический Дизайн</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Тестировщик ПО</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Интернет Маркетинг</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Java-разработчик</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Python–разработчик</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">IOS-разработчик</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Программирование</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Тестировщик ПО</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Интернет Маркетинг</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Java-разработчик</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Python–разработчик</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">IOS-разработчик</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Программирование</a></li>
                     </ul>
                   </div>
                 </div>
@@ -761,12 +787,12 @@
                   <div class="academy-inform">
                     <strong class="academy-inform__head">Информация</strong>
                     <ul class="academy-inform__list">
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Об академии</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Мероприятия</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Новости</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">База знаний</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Карьера</a></li>
-                      <li class="academy-inform__link"><a class="academy-inform__link" href="#">Контакты</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Об академии</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Мероприятия</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Новости</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">База знаний</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Карьера</a></li>
+                      <li class="academy-inform__list-element"><a class="academy-inform__link" href="#">Контакты</a></li>
                     </ul>
                   </div>
                 </div>
@@ -778,6 +804,7 @@
     </div>
   </div>
   <a class="accessibility" href="#wrapper">Back to top</a>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script> -->
 </body>
 
 </html>

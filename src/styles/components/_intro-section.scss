@@ -77,7 +77,7 @@
     }
   }
 
-  &__img-cross-bg {
+  &__img-cross {
     display: none;
     
     @include media('>=laptop') {
@@ -162,7 +162,7 @@
     }
   }
 
-  &__cross {
+  &__cross-sm {
     position: absolute;
     top: 0;
     left: 0;

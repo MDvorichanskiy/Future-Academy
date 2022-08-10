@@ -30,6 +30,11 @@
     content: $icon-cheveron-right; 
   }
 }
+.icon-play {
+  &:before {
+    content: $icon-play; 
+  }
+}
 .icon-star {
   &:before {
     content: $icon-star; 

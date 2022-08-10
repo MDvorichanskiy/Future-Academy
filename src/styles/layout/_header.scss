@@ -39,6 +39,10 @@
 
 .logo {
   padding-right: 65px;
+
+  &__link {
+    display: inline-block;
+  }
 }
 
 .header-drop {

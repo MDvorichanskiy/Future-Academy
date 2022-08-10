@@ -8,6 +8,7 @@ import initMobileNav from './components/mobileNav'
 import initAccordion from './components/initAccordion'
 import initSlick from './components/slick'
 import initAOS from './components/aos'
+import initFancybox from './components/fancybox'
 
 
 
@@ -18,4 +19,5 @@ ready(() => {
   initAccordion();
   initSlick();
   initAOS();
+  initFancybox();
 });
