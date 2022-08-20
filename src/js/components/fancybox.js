@@ -1,7 +1,6 @@
-import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
+import '@fancyapps/fancybox'
 
 export default function initFancybox () {
-  window.Fancybox = Fancybox;
   jQuery('a.lightbox, [data-fancybox]').fancybox({
     parentEl: 'body',
   });

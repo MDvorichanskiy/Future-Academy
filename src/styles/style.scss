@@ -9,7 +9,7 @@
 @import 'vendors/icomoon/styles';
 @import 'slick-carousel/slick/slick';
 @import 'aos/dist/aos.css';
-// @import 'fancyapps/ui/dist/fancybox.css';
+@import url('~@fancyapps/fancybox/dist/jquery.fancybox.css');
 
 // 3. Base styles and elements
 @import 'base/base';
@@ -31,3 +31,4 @@
 @import 'components/wellcome-section';
 @import 'components/helper-section';
 @import 'components/video-section';
+@import 'components/categories-section';
