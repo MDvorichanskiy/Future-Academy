@@ -19,14 +19,14 @@
 
   &__helper {
     margin: 0 auto 98px;
+    max-width: 350px;
     
     @include media('>=tablet') {
-      width: 430px;
       margin: 0 auto 160px;
     }
 
     @include media('>=desktop') {
-      width: 265px;
+      max-width: 265px;
       margin: 0 35px 0 0;
     }
   }
@@ -34,25 +34,26 @@
 
 .owl-helper {
   position: relative;
+  max-width: 350px;
   
   &__speech-bubble {
     position: relative;
     border-radius: 20px;
     border: 2px solid $black;
-    padding: 11px 17px 6px;
+    padding: 15px 17px 5px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.3;
     background: $white;
     min-height: 132px;
     
     @include media('>=tablet') {
       font-size: 16px;
-      padding: 15px 50px 0;
+      padding: 15px 25px 25px;
     }
     
     @include media('>=desktop') {
-      padding: 16px 20px 5px;
+      padding: 20px 20px 28px;
     }
 
     &:before {
@@ -96,40 +97,34 @@
         bottom: -29px;
       }
     }
-  }
-  
-  &__title {
-    display: block;
-    margin-bottom: 15px;
-  }
-  
-  &__text {
-    line-height: 1.3;
-    margin-bottom: 15px;
-  }
 
-  &__text-end {
-    display: block;
-    
-    @include media('>=tablet') {
-      margin-bottom: 22px;
+    p {
+      margin-bottom: 15px;
+
+      @include media('>=tablet') {
+        margin-bottom: 18px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
   
+  &__title {
+    font-weight: 600;
+  }
+
   &__decor {
     position: absolute;
     left: -4px;
-    top: 123px;
+    bottom: -64px;
     width: 64px;
     
     @include media('>=tablet') {
       left: -40px;
-      top: 145px;
+      bottom: -165px;
       width: 100%;
-    }
-
-    @include media('>=desktop') {
-      top: 165px;
     }
   }
 }
@@ -139,45 +134,42 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0 0 8px 5px;
+    padding: 0 0 0 5px;
     border-bottom: 1px solid $black;
-    margin-bottom: 18px;
+    margin: 0 -8px 18px;
     
     @include media('>=tablet') {
-      padding: 10px 95px 12px 18px;
-      margin-bottom: 37px;
+      padding: 0 95px 0 16px;
+      margin: 0 -15px 37px;
     }
   }
 
   &__link {
     position: relative;
     text-align: center;
+    display: inline-block;
+    padding: 0 8px 6px;
     
     @include media('>=tablet') {
       display: flex;
       text-align: left;
+      padding: 10px 15px 13px;
     }
     
     &:after {
       content: '';
-      width: 77px;
       height: 4px;
       position: absolute;
-      bottom: -8px;
-      left: -6px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       background: $gradient;
       opacity: 0;
       visibility: hidden;
-      
-      @include media('>=tablet') {
-        width: 160px;
-        bottom: -12px;
-        left: -18px;
-      }
     }
 
     &.age-selection__link--active,
-    &:hover {
+    &:visited {
       color: $black;
 
       &:after {

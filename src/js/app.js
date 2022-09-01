@@ -10,6 +10,7 @@ import initSlick from './components/slick';
 import initAOS from './components/aos';
 import initFancybox from './components/fancybox';
 import initTabs from './components/tabs';
+import initGoogleMaps from './components/googleMaps';
 
 
 
@@ -22,4 +23,5 @@ ready(() => {
   initAOS();
   initFancybox();
   initTabs();
+  initGoogleMaps();
 });
